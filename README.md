@@ -40,17 +40,17 @@ Plataforma web que organiza pacientes, turnos, especialidades, usuarios y roles 
 
 ```mermaid
 flowchart LR
-    subgraph Client [Frontend (React/Vite/Tailwind)]
+    subgraph Client["Frontend (React/Vite/Tailwind)"]
         UI[SPA]
     end
 
-    subgraph API [Backend (FastAPI)]
+    subgraph API["Backend (FastAPI)"]
         Auth[JWT Auth]
         Services[Servicios / Casos de uso]
         ORM[SQLModel/SQLAlchemy]
     end
 
-    subgraph DB [PostgreSQL]
+    subgraph DB["PostgreSQL"]
         Pac[pacientes]
         Med[medicos]
         Esp[especialidades]
